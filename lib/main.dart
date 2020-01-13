@@ -35,54 +35,48 @@ class MyApp extends StatelessWidget {
                 ),
               ),
 //              Phone number
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                child: Padding(
+                  padding: EdgeInsets.all(1.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       size: 20.0,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
+                    title: Text(
                       '+821079398919',
                       style: GoogleFonts.sourceSansPro(
                         color: Colors.teal[900],
-//                        letterSpacing: 2.5,
+                        letterSpacing: 2.5,
                         fontSize: 20.0,
                       ),
                     ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                child: Padding(
+                  padding: EdgeInsets.all(1.0),
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
                       size: 20.0,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
+                    title: Text(
                       'uzbzarif@gmail.com',
                       style: GoogleFonts.sourceSansPro(
                         color: Colors.teal[900],
-//                        letterSpacing: 2.5,
+                        letterSpacing: 2.5,
                         fontSize: 20.0,
                       ),
                     ),
-                  ],
+                  ),
                 ),
               ),
             ],
