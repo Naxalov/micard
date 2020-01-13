@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                   backgroundColor: Colors.transparent,
@@ -34,25 +35,29 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal[100],
+                ),
+              ),
 //              Phone number
               Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25.0),
-                child: Padding(
-                  padding: EdgeInsets.all(1.0),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.phone,
-                      size: 20.0,
-                      color: Colors.teal,
-                    ),
-                    title: Text(
-                      '+821079398919',
-                      style: GoogleFonts.sourceSansPro(
-                        color: Colors.teal[900],
-                        letterSpacing: 2.5,
-                        fontSize: 20.0,
-                      ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 20.0,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+821079398919',
+                    style: GoogleFonts.sourceSansPro(
+                      color: Colors.teal[900],
+                      letterSpacing: 2.5,
+                      fontSize: 20.0,
                     ),
                   ),
                 ),
@@ -60,21 +65,18 @@ class MyApp extends StatelessWidget {
               Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25.0),
-                child: Padding(
-                  padding: EdgeInsets.all(1.0),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.email,
-                      size: 20.0,
-                      color: Colors.teal,
-                    ),
-                    title: Text(
-                      'uzbzarif@gmail.com',
-                      style: GoogleFonts.sourceSansPro(
-                        color: Colors.teal[900],
-                        letterSpacing: 2.5,
-                        fontSize: 20.0,
-                      ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 20.0,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'uzbzarif@gmail.com',
+                    style: GoogleFonts.sourceSansPro(
+                      color: Colors.teal[900],
+                      letterSpacing: 2.5,
+                      fontSize: 20.0,
                     ),
                   ),
                 ),
