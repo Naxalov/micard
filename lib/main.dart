@@ -75,7 +75,6 @@ class MyApp extends StatelessWidget {
                     'uzbzarif@gmail.com',
                     style: GoogleFonts.sourceSansPro(
                       color: Colors.teal[900],
-                      letterSpacing: 2.5,
                       fontSize: 20.0,
                     ),
                   ),
